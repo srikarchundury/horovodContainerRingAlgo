@@ -1,0 +1,167 @@
+22/12/04 06:00:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+overall count -  20000
+num_partitions=50
+writing dataframes
+train_data_path=file:///opt/spark-data/intermediate_train_data.0
+val_data_path=file:///opt/spark-data/intermediate_val_data.0
+train_partitions=45
+val_partitions=5
+train_rows=14484
+val_rows=1721
+Sun Dec  4 06:01:18 2022[0]<stdout>:Shared lib path is pointing to: <CDLL '/usr/local/lib/python3.9/dist-packages/horovod/torch/mpi_lib_v2.cpython-39-aarch64-linux-gnu.so', handle 30449e70 at 0xffff8108de80>
+Sun Dec  4 06:01:18 2022[0]<stdout>:Training parameters: Epochs: 18
+Sun Dec  4 06:01:18 2022[0]<stdout>:Train rows: 14484, Train batch size: 128, Train_steps_per_epoch: 22
+Sun Dec  4 06:01:18 2022[0]<stdout>:Shuffle: True, Random seed: None
+Sun Dec  4 06:01:18 2022[0]<stdout>:Checkpoint file: /tmp/tmp_zo010bn/checkpoint, Logs dir: /tmp/tmp_zo010bn/logs
+Sun Dec  4 06:01:18 2022[0]<stdout>:
+Sun Dec  4 06:01:18 2022[0]<stdout>:Val rows: 1721, Val batch size: 128, Val_steps_per_epoch: 3
+Sun Dec  4 06:01:18 2022[0]<stdout>:
+Sun Dec  4 06:01:19 2022[0]<stdout>:train	epoch:	0	step	0:	{'loss': 27.696292877197266, 'all_metrics': []}
+Sun Dec  4 06:01:23 2022[0]<stdout>:val	epoch:	0	step	0:	{'loss': 2.2485222816467285, 'all_metrics': []}
+Sun Dec  4 06:01:24 2022[0]<stdout>:2022-Dec-04 06:01:24 UTC {'epoch': 0, 'train': {'loss': 3.763564109802246, 'all_metrics': []}, 'validation': {'loss': 2.2708957195281982, 'all_metrics': []}}
+Sun Dec  4 06:01:24 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:24 2022[0]<stdout>:train	epoch:	1	step	0:	{'loss': 2.284846544265747, 'all_metrics': []}
+Sun Dec  4 06:01:28 2022[0]<stdout>:val	epoch:	1	step	0:	{'loss': 1.1865986585617065, 'all_metrics': []}
+Sun Dec  4 06:01:28 2022[0]<stdout>:2022-Dec-04 06:01:28 UTC {'epoch': 1, 'train': {'loss': 2.0361037254333496, 'all_metrics': []}, 'validation': {'loss': 1.1300662755966187, 'all_metrics': []}}
+Sun Dec  4 06:01:28 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:29 2022[0]<stdout>:train	epoch:	2	step	0:	{'loss': 1.7020409107208252, 'all_metrics': []}
+Sun Dec  4 06:01:33 2022[0]<stdout>:val	epoch:	2	step	0:	{'loss': 0.8623291254043579, 'all_metrics': []}
+Sun Dec  4 06:01:33 2022[0]<stdout>:2022-Dec-04 06:01:33 UTC {'epoch': 2, 'train': {'loss': 1.4635989665985107, 'all_metrics': []}, 'validation': {'loss': 0.7838757038116455, 'all_metrics': []}}
+Sun Dec  4 06:01:33 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:33 2022[0]<stdout>:train	epoch:	3	step	0:	{'loss': 1.2990235090255737, 'all_metrics': []}
+Sun Dec  4 06:01:38 2022[0]<stdout>:val	epoch:	3	step	0:	{'loss': 0.6112827062606812, 'all_metrics': []}
+Sun Dec  4 06:01:38 2022[0]<stdout>:2022-Dec-04 06:01:38 UTC {'epoch': 3, 'train': {'loss': 1.1936842203140259, 'all_metrics': []}, 'validation': {'loss': 0.5806329846382141, 'all_metrics': []}}
+Sun Dec  4 06:01:38 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:38 2022[0]<stdout>:train	epoch:	4	step	0:	{'loss': 1.1265740394592285, 'all_metrics': []}
+Sun Dec  4 06:01:43 2022[0]<stdout>:val	epoch:	4	step	0:	{'loss': 0.49510249495506287, 'all_metrics': []}
+Sun Dec  4 06:01:43 2022[0]<stdout>:2022-Dec-04 06:01:43 UTC {'epoch': 4, 'train': {'loss': 1.010141372680664, 'all_metrics': []}, 'validation': {'loss': 0.4625767469406128, 'all_metrics': []}}
+Sun Dec  4 06:01:43 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:43 2022[0]<stdout>:train	epoch:	5	step	0:	{'loss': 1.0162690877914429, 'all_metrics': []}
+Sun Dec  4 06:01:47 2022[0]<stdout>:val	epoch:	5	step	0:	{'loss': 0.568356454372406, 'all_metrics': []}
+Sun Dec  4 06:01:48 2022[0]<stdout>:2022-Dec-04 06:01:48 UTC {'epoch': 5, 'train': {'loss': 0.9606122970581055, 'all_metrics': []}, 'validation': {'loss': 0.5495006442070007, 'all_metrics': []}}
+Sun Dec  4 06:01:48 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:48 2022[0]<stdout>:train	epoch:	6	step	0:	{'loss': 0.8996185660362244, 'all_metrics': []}
+Sun Dec  4 06:01:53 2022[0]<stdout>:val	epoch:	6	step	0:	{'loss': 0.4349575936794281, 'all_metrics': []}
+Sun Dec  4 06:01:53 2022[0]<stdout>:2022-Dec-04 06:01:53 UTC {'epoch': 6, 'train': {'loss': 0.9077421426773071, 'all_metrics': []}, 'validation': {'loss': 0.4191063344478607, 'all_metrics': []}}
+Sun Dec  4 06:01:53 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:53 2022[0]<stdout>:train	epoch:	7	step	0:	{'loss': 0.8821129202842712, 'all_metrics': []}
+Sun Dec  4 06:01:57 2022[0]<stdout>:val	epoch:	7	step	0:	{'loss': 0.5117413401603699, 'all_metrics': []}
+Sun Dec  4 06:01:57 2022[0]<stdout>:2022-Dec-04 06:01:57 UTC {'epoch': 7, 'train': {'loss': 0.8517492413520813, 'all_metrics': []}, 'validation': {'loss': 0.4918215572834015, 'all_metrics': []}}
+Sun Dec  4 06:01:57 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:58 2022[0]<stdout>:train	epoch:	8	step	0:	{'loss': 0.8872890472412109, 'all_metrics': []}
+Sun Dec  4 06:02:02 2022[0]<stdout>:val	epoch:	8	step	0:	{'loss': 0.42790889739990234, 'all_metrics': []}
+Sun Dec  4 06:02:02 2022[0]<stdout>:2022-Dec-04 06:02:02 UTC {'epoch': 8, 'train': {'loss': 0.8283965587615967, 'all_metrics': []}, 'validation': {'loss': 0.3823305070400238, 'all_metrics': []}}
+Sun Dec  4 06:02:02 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:02 2022[0]<stdout>:train	epoch:	9	step	0:	{'loss': 0.8421206474304199, 'all_metrics': []}
+Sun Dec  4 06:02:07 2022[0]<stdout>:val	epoch:	9	step	0:	{'loss': 0.3864215314388275, 'all_metrics': []}
+Sun Dec  4 06:02:07 2022[0]<stdout>:2022-Dec-04 06:02:07 UTC {'epoch': 9, 'train': {'loss': 0.8153543472290039, 'all_metrics': []}, 'validation': {'loss': 0.3801002502441406, 'all_metrics': []}}
+Sun Dec  4 06:02:07 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:07 2022[0]<stdout>:train	epoch:	10	step	0:	{'loss': 0.8119417428970337, 'all_metrics': []}
+Sun Dec  4 06:02:12 2022[0]<stdout>:val	epoch:	10	step	0:	{'loss': 0.3849075436592102, 'all_metrics': []}
+Sun Dec  4 06:02:12 2022[0]<stdout>:2022-Dec-04 06:02:12 UTC {'epoch': 10, 'train': {'loss': 0.7829616069793701, 'all_metrics': []}, 'validation': {'loss': 0.36816421151161194, 'all_metrics': []}}
+Sun Dec  4 06:02:12 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:12 2022[0]<stdout>:train	epoch:	11	step	0:	{'loss': 0.7789619565010071, 'all_metrics': []}
+Sun Dec  4 06:02:17 2022[0]<stdout>:val	epoch:	11	step	0:	{'loss': 0.379692941904068, 'all_metrics': []}
+Sun Dec  4 06:02:17 2022[0]<stdout>:2022-Dec-04 06:02:17 UTC {'epoch': 11, 'train': {'loss': 0.7388589978218079, 'all_metrics': []}, 'validation': {'loss': 0.349236398935318, 'all_metrics': []}}
+Sun Dec  4 06:02:17 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:17 2022[0]<stdout>:train	epoch:	12	step	0:	{'loss': 0.8839424252510071, 'all_metrics': []}
+Sun Dec  4 06:02:21 2022[0]<stdout>:val	epoch:	12	step	0:	{'loss': 0.43634310364723206, 'all_metrics': []}
+Sun Dec  4 06:02:21 2022[0]<stdout>:2022-Dec-04 06:02:21 UTC {'epoch': 12, 'train': {'loss': 0.7285738587379456, 'all_metrics': []}, 'validation': {'loss': 0.4248024523258209, 'all_metrics': []}}
+Sun Dec  4 06:02:21 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:22 2022[0]<stdout>:train	epoch:	13	step	0:	{'loss': 0.7316722273826599, 'all_metrics': []}
+Sun Dec  4 06:02:26 2022[0]<stdout>:val	epoch:	13	step	0:	{'loss': 0.3088527321815491, 'all_metrics': []}
+Sun Dec  4 06:02:26 2022[0]<stdout>:2022-Dec-04 06:02:26 UTC {'epoch': 13, 'train': {'loss': 0.726216733455658, 'all_metrics': []}, 'validation': {'loss': 0.3215619623661041, 'all_metrics': []}}
+Sun Dec  4 06:02:26 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:27 2022[0]<stdout>:train	epoch:	14	step	0:	{'loss': 0.7109895944595337, 'all_metrics': []}
+Sun Dec  4 06:02:31 2022[0]<stdout>:val	epoch:	14	step	0:	{'loss': 0.29692432284355164, 'all_metrics': []}
+Sun Dec  4 06:02:31 2022[0]<stdout>:2022-Dec-04 06:02:31 UTC {'epoch': 14, 'train': {'loss': 0.7444107532501221, 'all_metrics': []}, 'validation': {'loss': 0.32475125789642334, 'all_metrics': []}}
+Sun Dec  4 06:02:31 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:32 2022[0]<stdout>:train	epoch:	15	step	0:	{'loss': 0.7376471757888794, 'all_metrics': []}
+Sun Dec  4 06:02:36 2022[0]<stdout>:val	epoch:	15	step	0:	{'loss': 0.29839518666267395, 'all_metrics': []}
+Sun Dec  4 06:02:36 2022[0]<stdout>:2022-Dec-04 06:02:36 UTC {'epoch': 15, 'train': {'loss': 0.7049947381019592, 'all_metrics': []}, 'validation': {'loss': 0.3173730969429016, 'all_metrics': []}}
+Sun Dec  4 06:02:36 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:36 2022[0]<stdout>:train	epoch:	16	step	0:	{'loss': 0.7563409209251404, 'all_metrics': []}
+Sun Dec  4 06:02:41 2022[0]<stdout>:val	epoch:	16	step	0:	{'loss': 0.35367247462272644, 'all_metrics': []}
+Sun Dec  4 06:02:41 2022[0]<stdout>:2022-Dec-04 06:02:41 UTC {'epoch': 16, 'train': {'loss': 0.6689484119415283, 'all_metrics': []}, 'validation': {'loss': 0.32016217708587646, 'all_metrics': []}}
+Sun Dec  4 06:02:41 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:02:41 2022[0]<stdout>:train	epoch:	17	step	0:	{'loss': 0.6967227458953857, 'all_metrics': []}
+Sun Dec  4 06:02:46 2022[0]<stdout>:val	epoch:	17	step	0:	{'loss': 0.39992275834083557, 'all_metrics': []}
+Sun Dec  4 06:02:46 2022[0]<stdout>:2022-Dec-04 06:02:46 UTC {'epoch': 17, 'train': {'loss': 0.6816226840019226, 'all_metrics': []}, 'validation': {'loss': 0.3676581382751465, 'all_metrics': []}}
+Sun Dec  4 06:02:46 2022[0]<stdout>:Syncing dir /tmp/tmp_zo010bn to dir file:///opt/spark-data/runs/pytorch_1670133675
+Sun Dec  4 06:01:18 2022[3]<stdout>:Shared lib path is pointing to: <CDLL '/usr/local/lib/python3.9/dist-packages/horovod/torch/mpi_lib_v2.cpython-39-aarch64-linux-gnu.so', handle 4fb3e70 at 0xffff73a00e80>
+Sun Dec  4 06:01:24 2022[3]<stdout>:2022-Dec-04 06:01:24 UTC {'epoch': 0, 'train': {'loss': 3.763564109802246, 'all_metrics': []}, 'validation': {'loss': 2.2708957195281982, 'all_metrics': []}}
+Sun Dec  4 06:01:28 2022[3]<stdout>:2022-Dec-04 06:01:28 UTC {'epoch': 1, 'train': {'loss': 2.0361037254333496, 'all_metrics': []}, 'validation': {'loss': 1.1300662755966187, 'all_metrics': []}}
+Sun Dec  4 06:01:33 2022[3]<stdout>:2022-Dec-04 06:01:33 UTC {'epoch': 2, 'train': {'loss': 1.4635989665985107, 'all_metrics': []}, 'validation': {'loss': 0.7838757038116455, 'all_metrics': []}}
+Sun Dec  4 06:01:38 2022[3]<stdout>:2022-Dec-04 06:01:38 UTC {'epoch': 3, 'train': {'loss': 1.1936842203140259, 'all_metrics': []}, 'validation': {'loss': 0.5806329846382141, 'all_metrics': []}}
+Sun Dec  4 06:01:43 2022[3]<stdout>:2022-Dec-04 06:01:43 UTC {'epoch': 4, 'train': {'loss': 1.010141372680664, 'all_metrics': []}, 'validation': {'loss': 0.4625767469406128, 'all_metrics': []}}
+Sun Dec  4 06:01:48 2022[3]<stdout>:2022-Dec-04 06:01:48 UTC {'epoch': 5, 'train': {'loss': 0.9606122970581055, 'all_metrics': []}, 'validation': {'loss': 0.5495006442070007, 'all_metrics': []}}
+Sun Dec  4 06:01:53 2022[3]<stdout>:2022-Dec-04 06:01:53 UTC {'epoch': 6, 'train': {'loss': 0.9077421426773071, 'all_metrics': []}, 'validation': {'loss': 0.4191063344478607, 'all_metrics': []}}
+Sun Dec  4 06:01:57 2022[3]<stdout>:2022-Dec-04 06:01:57 UTC {'epoch': 7, 'train': {'loss': 0.8517492413520813, 'all_metrics': []}, 'validation': {'loss': 0.4918215572834015, 'all_metrics': []}}
+Sun Dec  4 06:02:02 2022[3]<stdout>:2022-Dec-04 06:02:02 UTC {'epoch': 8, 'train': {'loss': 0.8283965587615967, 'all_metrics': []}, 'validation': {'loss': 0.3823305070400238, 'all_metrics': []}}
+Sun Dec  4 06:02:07 2022[3]<stdout>:2022-Dec-04 06:02:07 UTC {'epoch': 9, 'train': {'loss': 0.8153543472290039, 'all_metrics': []}, 'validation': {'loss': 0.3801002502441406, 'all_metrics': []}}
+Sun Dec  4 06:02:12 2022[3]<stdout>:2022-Dec-04 06:02:12 UTC {'epoch': 10, 'train': {'loss': 0.7829616069793701, 'all_metrics': []}, 'validation': {'loss': 0.36816421151161194, 'all_metrics': []}}
+Sun Dec  4 06:02:17 2022[3]<stdout>:2022-Dec-04 06:02:17 UTC {'epoch': 11, 'train': {'loss': 0.7388589978218079, 'all_metrics': []}, 'validation': {'loss': 0.349236398935318, 'all_metrics': []}}
+Sun Dec  4 06:02:21 2022[3]<stdout>:2022-Dec-04 06:02:21 UTC {'epoch': 12, 'train': {'loss': 0.7285738587379456, 'all_metrics': []}, 'validation': {'loss': 0.4248024523258209, 'all_metrics': []}}
+Sun Dec  4 06:02:26 2022[3]<stdout>:2022-Dec-04 06:02:26 UTC {'epoch': 13, 'train': {'loss': 0.726216733455658, 'all_metrics': []}, 'validation': {'loss': 0.3215619623661041, 'all_metrics': []}}
+Sun Dec  4 06:02:31 2022[3]<stdout>:2022-Dec-04 06:02:31 UTC {'epoch': 14, 'train': {'loss': 0.7444107532501221, 'all_metrics': []}, 'validation': {'loss': 0.32475125789642334, 'all_metrics': []}}
+Sun Dec  4 06:02:36 2022[3]<stdout>:2022-Dec-04 06:02:36 UTC {'epoch': 15, 'train': {'loss': 0.7049947381019592, 'all_metrics': []}, 'validation': {'loss': 0.3173730969429016, 'all_metrics': []}}
+Sun Dec  4 06:02:41 2022[3]<stdout>:2022-Dec-04 06:02:41 UTC {'epoch': 16, 'train': {'loss': 0.6689484119415283, 'all_metrics': []}, 'validation': {'loss': 0.32016217708587646, 'all_metrics': []}}
+Sun Dec  4 06:02:46 2022[3]<stdout>:2022-Dec-04 06:02:46 UTC {'epoch': 17, 'train': {'loss': 0.6816226840019226, 'all_metrics': []}, 'validation': {'loss': 0.3676581382751465, 'all_metrics': []}}
+Sun Dec  4 06:01:18 2022[2]<stdout>:Shared lib path is pointing to: <CDLL '/usr/local/lib/python3.9/dist-packages/horovod/torch/mpi_lib_v2.cpython-39-aarch64-linux-gnu.so', handle 21885e70 at 0xffff64e59e80>
+Sun Dec  4 06:01:24 2022[2]<stdout>:2022-Dec-04 06:01:24 UTC {'epoch': 0, 'train': {'loss': 3.763564109802246, 'all_metrics': []}, 'validation': {'loss': 2.2708957195281982, 'all_metrics': []}}
+Sun Dec  4 06:01:28 2022[2]<stdout>:2022-Dec-04 06:01:28 UTC {'epoch': 1, 'train': {'loss': 2.0361037254333496, 'all_metrics': []}, 'validation': {'loss': 1.1300662755966187, 'all_metrics': []}}
+Sun Dec  4 06:01:33 2022[2]<stdout>:2022-Dec-04 06:01:33 UTC {'epoch': 2, 'train': {'loss': 1.4635989665985107, 'all_metrics': []}, 'validation': {'loss': 0.7838757038116455, 'all_metrics': []}}
+Sun Dec  4 06:01:38 2022[2]<stdout>:2022-Dec-04 06:01:38 UTC {'epoch': 3, 'train': {'loss': 1.1936842203140259, 'all_metrics': []}, 'validation': {'loss': 0.5806329846382141, 'all_metrics': []}}
+Sun Dec  4 06:01:43 2022[2]<stdout>:2022-Dec-04 06:01:43 UTC {'epoch': 4, 'train': {'loss': 1.010141372680664, 'all_metrics': []}, 'validation': {'loss': 0.4625767469406128, 'all_metrics': []}}
+Sun Dec  4 06:01:48 2022[2]<stdout>:2022-Dec-04 06:01:48 UTC {'epoch': 5, 'train': {'loss': 0.9606122970581055, 'all_metrics': []}, 'validation': {'loss': 0.5495006442070007, 'all_metrics': []}}
+Sun Dec  4 06:01:53 2022[2]<stdout>:2022-Dec-04 06:01:53 UTC {'epoch': 6, 'train': {'loss': 0.9077421426773071, 'all_metrics': []}, 'validation': {'loss': 0.4191063344478607, 'all_metrics': []}}
+Sun Dec  4 06:01:57 2022[2]<stdout>:2022-Dec-04 06:01:57 UTC {'epoch': 7, 'train': {'loss': 0.8517492413520813, 'all_metrics': []}, 'validation': {'loss': 0.4918215572834015, 'all_metrics': []}}
+Sun Dec  4 06:02:02 2022[2]<stdout>:2022-Dec-04 06:02:02 UTC {'epoch': 8, 'train': {'loss': 0.8283965587615967, 'all_metrics': []}, 'validation': {'loss': 0.3823305070400238, 'all_metrics': []}}
+Sun Dec  4 06:02:07 2022[2]<stdout>:2022-Dec-04 06:02:07 UTC {'epoch': 9, 'train': {'loss': 0.8153543472290039, 'all_metrics': []}, 'validation': {'loss': 0.3801002502441406, 'all_metrics': []}}
+Sun Dec  4 06:02:12 2022[2]<stdout>:2022-Dec-04 06:02:12 UTC {'epoch': 10, 'train': {'loss': 0.7829616069793701, 'all_metrics': []}, 'validation': {'loss': 0.36816421151161194, 'all_metrics': []}}
+Sun Dec  4 06:02:17 2022[2]<stdout>:2022-Dec-04 06:02:17 UTC {'epoch': 11, 'train': {'loss': 0.7388589978218079, 'all_metrics': []}, 'validation': {'loss': 0.349236398935318, 'all_metrics': []}}
+Sun Dec  4 06:02:21 2022[2]<stdout>:2022-Dec-04 06:02:21 UTC {'epoch': 12, 'train': {'loss': 0.7285738587379456, 'all_metrics': []}, 'validation': {'loss': 0.4248024523258209, 'all_metrics': []}}
+Sun Dec  4 06:02:26 2022[2]<stdout>:2022-Dec-04 06:02:26 UTC {'epoch': 13, 'train': {'loss': 0.726216733455658, 'all_metrics': []}, 'validation': {'loss': 0.3215619623661041, 'all_metrics': []}}
+Sun Dec  4 06:02:31 2022[2]<stdout>:2022-Dec-04 06:02:31 UTC {'epoch': 14, 'train': {'loss': 0.7444107532501221, 'all_metrics': []}, 'validation': {'loss': 0.32475125789642334, 'all_metrics': []}}
+Sun Dec  4 06:02:36 2022[2]<stdout>:2022-Dec-04 06:02:36 UTC {'epoch': 15, 'train': {'loss': 0.7049947381019592, 'all_metrics': []}, 'validation': {'loss': 0.3173730969429016, 'all_metrics': []}}
+Sun Dec  4 06:02:41 2022[2]<stdout>:2022-Dec-04 06:02:41 UTC {'epoch': 16, 'train': {'loss': 0.6689484119415283, 'all_metrics': []}, 'validation': {'loss': 0.32016217708587646, 'all_metrics': []}}
+Sun Dec  4 06:02:46 2022[2]<stdout>:2022-Dec-04 06:02:46 UTC {'epoch': 17, 'train': {'loss': 0.6816226840019226, 'all_metrics': []}, 'validation': {'loss': 0.3676581382751465, 'all_metrics': []}}
+Sun Dec  4 06:01:18 2022[4]<stdout>:Shared lib path is pointing to: <CDLL '/usr/local/lib/python3.9/dist-packages/horovod/torch/mpi_lib_v2.cpython-39-aarch64-linux-gnu.so', handle 12666e70 at 0xffff67e92e80>
+Sun Dec  4 06:01:24 2022[4]<stdout>:2022-Dec-04 06:01:24 UTC {'epoch': 0, 'train': {'loss': 3.763564109802246, 'all_metrics': []}, 'validation': {'loss': 2.2708957195281982, 'all_metrics': []}}
+Sun Dec  4 06:01:28 2022[4]<stdout>:2022-Dec-04 06:01:28 UTC {'epoch': 1, 'train': {'loss': 2.0361037254333496, 'all_metrics': []}, 'validation': {'loss': 1.1300662755966187, 'all_metrics': []}}
+Sun Dec  4 06:01:33 2022[4]<stdout>:2022-Dec-04 06:01:33 UTC {'epoch': 2, 'train': {'loss': 1.4635989665985107, 'all_metrics': []}, 'validation': {'loss': 0.7838757038116455, 'all_metrics': []}}
+Sun Dec  4 06:01:38 2022[4]<stdout>:2022-Dec-04 06:01:38 UTC {'epoch': 3, 'train': {'loss': 1.1936842203140259, 'all_metrics': []}, 'validation': {'loss': 0.5806329846382141, 'all_metrics': []}}
+Sun Dec  4 06:01:43 2022[4]<stdout>:2022-Dec-04 06:01:43 UTC {'epoch': 4, 'train': {'loss': 1.010141372680664, 'all_metrics': []}, 'validation': {'loss': 0.4625767469406128, 'all_metrics': []}}
+Sun Dec  4 06:01:48 2022[4]<stdout>:2022-Dec-04 06:01:48 UTC {'epoch': 5, 'train': {'loss': 0.9606122970581055, 'all_metrics': []}, 'validation': {'loss': 0.5495006442070007, 'all_metrics': []}}
+Sun Dec  4 06:01:53 2022[4]<stdout>:2022-Dec-04 06:01:53 UTC {'epoch': 6, 'train': {'loss': 0.9077421426773071, 'all_metrics': []}, 'validation': {'loss': 0.4191063344478607, 'all_metrics': []}}
+Sun Dec  4 06:01:57 2022[4]<stdout>:2022-Dec-04 06:01:57 UTC {'epoch': 7, 'train': {'loss': 0.8517492413520813, 'all_metrics': []}, 'validation': {'loss': 0.4918215572834015, 'all_metrics': []}}
+Sun Dec  4 06:02:02 2022[4]<stdout>:2022-Dec-04 06:02:02 UTC {'epoch': 8, 'train': {'loss': 0.8283965587615967, 'all_metrics': []}, 'validation': {'loss': 0.3823305070400238, 'all_metrics': []}}
+Sun Dec  4 06:02:07 2022[4]<stdout>:2022-Dec-04 06:02:07 UTC {'epoch': 9, 'train': {'loss': 0.8153543472290039, 'all_metrics': []}, 'validation': {'loss': 0.3801002502441406, 'all_metrics': []}}
+Sun Dec  4 06:02:12 2022[4]<stdout>:2022-Dec-04 06:02:12 UTC {'epoch': 10, 'train': {'loss': 0.7829616069793701, 'all_metrics': []}, 'validation': {'loss': 0.36816421151161194, 'all_metrics': []}}
+Sun Dec  4 06:02:17 2022[4]<stdout>:2022-Dec-04 06:02:17 UTC {'epoch': 11, 'train': {'loss': 0.7388589978218079, 'all_metrics': []}, 'validation': {'loss': 0.349236398935318, 'all_metrics': []}}
+Sun Dec  4 06:02:21 2022[4]<stdout>:2022-Dec-04 06:02:21 UTC {'epoch': 12, 'train': {'loss': 0.7285738587379456, 'all_metrics': []}, 'validation': {'loss': 0.4248024523258209, 'all_metrics': []}}
+Sun Dec  4 06:02:26 2022[4]<stdout>:2022-Dec-04 06:02:26 UTC {'epoch': 13, 'train': {'loss': 0.726216733455658, 'all_metrics': []}, 'validation': {'loss': 0.3215619623661041, 'all_metrics': []}}
+Sun Dec  4 06:02:31 2022[4]<stdout>:2022-Dec-04 06:02:31 UTC {'epoch': 14, 'train': {'loss': 0.7444107532501221, 'all_metrics': []}, 'validation': {'loss': 0.32475125789642334, 'all_metrics': []}}
+Sun Dec  4 06:02:36 2022[4]<stdout>:2022-Dec-04 06:02:36 UTC {'epoch': 15, 'train': {'loss': 0.7049947381019592, 'all_metrics': []}, 'validation': {'loss': 0.3173730969429016, 'all_metrics': []}}
+Sun Dec  4 06:02:41 2022[4]<stdout>:2022-Dec-04 06:02:41 UTC {'epoch': 16, 'train': {'loss': 0.6689484119415283, 'all_metrics': []}, 'validation': {'loss': 0.32016217708587646, 'all_metrics': []}}
+Sun Dec  4 06:02:46 2022[4]<stdout>:2022-Dec-04 06:02:46 UTC {'epoch': 17, 'train': {'loss': 0.6816226840019226, 'all_metrics': []}, 'validation': {'loss': 0.3676581382751465, 'all_metrics': []}}
+Sun Dec  4 06:01:18 2022[1]<stdout>:Shared lib path is pointing to: <CDLL '/usr/local/lib/python3.9/dist-packages/horovod/torch/mpi_lib_v2.cpython-39-aarch64-linux-gnu.so', handle 31c7ae70 at 0xffff5a322e80>
+Sun Dec  4 06:01:24 2022[1]<stdout>:2022-Dec-04 06:01:24 UTC {'epoch': 0, 'train': {'loss': 3.763564109802246, 'all_metrics': []}, 'validation': {'loss': 2.2708957195281982, 'all_metrics': []}}
+Sun Dec  4 06:01:28 2022[1]<stdout>:2022-Dec-04 06:01:28 UTC {'epoch': 1, 'train': {'loss': 2.0361037254333496, 'all_metrics': []}, 'validation': {'loss': 1.1300662755966187, 'all_metrics': []}}
+Sun Dec  4 06:01:33 2022[1]<stdout>:2022-Dec-04 06:01:33 UTC {'epoch': 2, 'train': {'loss': 1.4635989665985107, 'all_metrics': []}, 'validation': {'loss': 0.7838757038116455, 'all_metrics': []}}
+Sun Dec  4 06:01:38 2022[1]<stdout>:2022-Dec-04 06:01:38 UTC {'epoch': 3, 'train': {'loss': 1.1936842203140259, 'all_metrics': []}, 'validation': {'loss': 0.5806329846382141, 'all_metrics': []}}
+Sun Dec  4 06:01:43 2022[1]<stdout>:2022-Dec-04 06:01:43 UTC {'epoch': 4, 'train': {'loss': 1.010141372680664, 'all_metrics': []}, 'validation': {'loss': 0.4625767469406128, 'all_metrics': []}}
+Sun Dec  4 06:01:48 2022[1]<stdout>:2022-Dec-04 06:01:48 UTC {'epoch': 5, 'train': {'loss': 0.9606122970581055, 'all_metrics': []}, 'validation': {'loss': 0.5495006442070007, 'all_metrics': []}}
+Sun Dec  4 06:01:53 2022[1]<stdout>:2022-Dec-04 06:01:53 UTC {'epoch': 6, 'train': {'loss': 0.9077421426773071, 'all_metrics': []}, 'validation': {'loss': 0.4191063344478607, 'all_metrics': []}}
+Sun Dec  4 06:01:57 2022[1]<stdout>:2022-Dec-04 06:01:57 UTC {'epoch': 7, 'train': {'loss': 0.8517492413520813, 'all_metrics': []}, 'validation': {'loss': 0.4918215572834015, 'all_metrics': []}}
+Sun Dec  4 06:02:02 2022[1]<stdout>:2022-Dec-04 06:02:02 UTC {'epoch': 8, 'train': {'loss': 0.8283965587615967, 'all_metrics': []}, 'validation': {'loss': 0.3823305070400238, 'all_metrics': []}}
+Sun Dec  4 06:02:07 2022[1]<stdout>:2022-Dec-04 06:02:07 UTC {'epoch': 9, 'train': {'loss': 0.8153543472290039, 'all_metrics': []}, 'validation': {'loss': 0.3801002502441406, 'all_metrics': []}}
+Sun Dec  4 06:02:12 2022[1]<stdout>:2022-Dec-04 06:02:12 UTC {'epoch': 10, 'train': {'loss': 0.7829616069793701, 'all_metrics': []}, 'validation': {'loss': 0.36816421151161194, 'all_metrics': []}}
+Sun Dec  4 06:02:17 2022[1]<stdout>:2022-Dec-04 06:02:17 UTC {'epoch': 11, 'train': {'loss': 0.7388589978218079, 'all_metrics': []}, 'validation': {'loss': 0.349236398935318, 'all_metrics': []}}
+Sun Dec  4 06:02:21 2022[1]<stdout>:2022-Dec-04 06:02:21 UTC {'epoch': 12, 'train': {'loss': 0.7285738587379456, 'all_metrics': []}, 'validation': {'loss': 0.4248024523258209, 'all_metrics': []}}
+Sun Dec  4 06:02:26 2022[1]<stdout>:2022-Dec-04 06:02:26 UTC {'epoch': 13, 'train': {'loss': 0.726216733455658, 'all_metrics': []}, 'validation': {'loss': 0.3215619623661041, 'all_metrics': []}}
+Sun Dec  4 06:02:31 2022[1]<stdout>:2022-Dec-04 06:02:31 UTC {'epoch': 14, 'train': {'loss': 0.7444107532501221, 'all_metrics': []}, 'validation': {'loss': 0.32475125789642334, 'all_metrics': []}}
+Sun Dec  4 06:02:36 2022[1]<stdout>:2022-Dec-04 06:02:36 UTC {'epoch': 15, 'train': {'loss': 0.7049947381019592, 'all_metrics': []}, 'validation': {'loss': 0.3173730969429016, 'all_metrics': []}}
+Sun Dec  4 06:02:41 2022[1]<stdout>:2022-Dec-04 06:02:41 UTC {'epoch': 16, 'train': {'loss': 0.6689484119415283, 'all_metrics': []}, 'validation': {'loss': 0.32016217708587646, 'all_metrics': []}}
+Sun Dec  4 06:02:46 2022[1]<stdout>:2022-Dec-04 06:02:46 UTC {'epoch': 17, 'train': {'loss': 0.6816226840019226, 'all_metrics': []}, 'validation': {'loss': 0.3676581382751465, 'all_metrics': []}}
+Test accuracy: 0.8990918264379415

@@ -1,0 +1,1 @@
+docker exec -it spark-driver /bin/bash

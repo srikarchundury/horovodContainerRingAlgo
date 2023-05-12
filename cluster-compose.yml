@@ -1,0 +1,247 @@
+version: "3.7"
+services:
+  spark-master:
+    image: spark-master-image
+    container_name: spark-master
+    hostname: spark-master
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    networks:
+      spark-network:
+        ipv4_address: 10.5.0.2
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+    environment:
+      - "SPARK_LOCAL_IP=spark-master"
+  spark-worker-1:
+    image: spark-worker-image
+    container_name: spark-worker-1
+    hostname: spark-worker-1
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    depends_on:
+      - spark-master
+    ports:
+      - "8081:8081"
+    env_file: ./docker/worker/spark-worker-config.sh
+    environment:
+      - "SPARK_LOCAL_IP=spark-worker-1"
+      - "SPARK_PUBLIC_DNS=spark-worker-1"
+      - "SPARK_WORKER_CORES=1"
+      - "SPARK_WORKER_MEMORY=1229m"
+    networks: 
+      spark-network:
+        ipv4_address: 10.5.0.3
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+  spark-worker-2:
+    image: spark-worker-image
+    container_name: spark-worker-2
+    hostname: spark-worker-2
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    depends_on:
+      - spark-master
+    ports:
+      - "8082:8081"
+    env_file: ./docker/worker/spark-worker-config.sh
+    environment:
+      - "SPARK_LOCAL_IP=spark-worker-2"
+      - "SPARK_PUBLIC_DNS=spark-worker-2"
+      - "SPARK_WORKER_CORES=1"
+      - "SPARK_WORKER_MEMORY=1229m"
+    networks:
+      spark-network:
+        ipv4_address: 10.5.0.4
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+  spark-worker-3:
+    image: spark-worker-image
+    container_name: spark-worker-3
+    hostname: spark-worker-3
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    depends_on:
+      - spark-master
+    ports:
+      - "8083:8081"
+    env_file: ./docker/worker/spark-worker-config.sh
+    environment:
+      - "SPARK_LOCAL_IP=spark-worker-3"
+      - "SPARK_PUBLIC_DNS=spark-worker-3"
+      - "SPARK_WORKER_CORES=1"
+      - "SPARK_WORKER_MEMORY=1229m"
+    networks: 
+      spark-network:
+        ipv4_address: 10.5.0.5
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+  spark-worker-4:
+    image: spark-worker-image
+    container_name: spark-worker-4
+    hostname: spark-worker-4
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    depends_on:
+      - spark-master
+    ports:
+      - "8084:8081"
+    env_file: ./docker/worker/spark-worker-config.sh
+    environment:
+      - "SPARK_LOCAL_IP=spark-worker-4"
+      - "SPARK_PUBLIC_DNS=spark-worker-4"
+      - "SPARK_WORKER_CORES=1"
+      - "SPARK_WORKER_MEMORY=1229m"
+    networks: 
+      spark-network:
+        ipv4_address: 10.5.0.6
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+  spark-worker-5:
+    image: spark-worker-image
+    container_name: spark-worker-5
+    hostname: spark-worker-5
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1229M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    depends_on:
+      - spark-master
+    ports:
+      - "8085:8081"
+    env_file: ./docker/worker/spark-worker-config.sh
+    environment:
+      - "SPARK_LOCAL_IP=spark-worker-5"
+      - "SPARK_PUBLIC_DNS=spark-worker-5"
+      - "SPARK_WORKER_CORES=1"
+      - "SPARK_WORKER_MEMORY=1229m"
+    networks: 
+      spark-network:
+        ipv4_address: 10.5.0.7
+    volumes:
+       - /tmp/spark-data:/opt/spark-data
+  # spark-worker-6:
+  #   image: spark-worker-image
+  #   container_name: spark-worker-6
+  #   hostname: spark-worker-6
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         cpus: '1'
+  #         memory: 1024M
+  #       reservations:
+  #         cpus: '0.25'
+  #         memory: 128M
+  #   depends_on:
+  #     - spark-master
+  #   ports:
+  #     - "8086:8081"
+  #   env_file: ./docker/worker/spark-worker-config.sh
+  #   environment:
+  #     - "SPARK_LOCAL_IP=spark-worker-6"
+  #     - "SPARK_PUBLIC_DNS=spark-worker-6"
+  #     - "SPARK_WORKER_CORES=1"
+  #     - "SPARK_WORKER_MEMORY=1024m"
+  #   networks: 
+  #     spark-network:
+  #       ipv4_address: 10.5.0.8
+  #   volumes:
+  #      - /tmp/spark-data:/opt/spark-data
+  # spark-worker-7:
+  #   image: spark-worker-image
+  #   container_name: spark-worker-7
+  #   hostname: spark-worker-7
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         cpus: '1'
+  #         memory: 1024M
+  #       reservations:
+  #         cpus: '0.25'
+  #         memory: 128M
+  #   depends_on:
+  #     - spark-master
+  #   ports:
+  #     - "8087:8081"
+  #   env_file: ./docker/worker/spark-worker-config.sh
+  #   environment:
+  #     - "SPARK_LOCAL_IP=spark-worker-7"
+  #     - "SPARK_PUBLIC_DNS=spark-worker-7"
+  #     - "SPARK_WORKER_CORES=1"
+  #     - "SPARK_WORKER_MEMORY=1024m"
+  #   networks: 
+  #     spark-network:
+  #       ipv4_address: 10.5.0.9
+  #   volumes:
+  #      - /tmp/spark-data:/opt/spark-data
+  # spark-worker-8:
+  #   image: spark-worker-image
+  #   container_name: spark-worker-8
+  #   hostname: spark-worker-8
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         cpus: '1'
+  #         memory: 1024M
+  #       reservations:
+  #         cpus: '0.25'
+  #         memory: 128M
+  #   depends_on:
+  #     - spark-master
+  #   ports:
+  #     - "8088:8081"
+  #   env_file: ./docker/worker/spark-worker-config.sh
+  #   environment:
+  #     - "SPARK_LOCAL_IP=spark-worker-8"
+  #     - "SPARK_PUBLIC_DNS=spark-worker-8"
+  #     - "SPARK_WORKER_CORES=1"
+  #     - "SPARK_WORKER_MEMORY=1024m"
+  #   networks: 
+  #     spark-network:
+  #       ipv4_address: 10.5.0.10
+  #   volumes:
+  #      - /tmp/spark-data:/opt/spark-data
+networks:
+  spark-network:
+    driver: bridge
+    ipam:
+     driver: default
+     config:
+       - subnet: 10.5.0.0/16

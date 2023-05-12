@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  spark-driver:
+      image: spark-driver-image
+      container_name: spark-driver
+      hostname: spark-driver
+      deploy:
+        resources:
+          limits:
+            cpus: '1'
+            memory: 1024M
+          reservations:
+            cpus: '0.25'
+            memory: 128M
+      networks: 
+        cluster_spark-network:
+          ipv4_address: 10.5.0.99
+      volumes:
+        - /tmp/spark-data:/opt/spark-data
+networks:
+  cluster_spark-network:
+    external: true

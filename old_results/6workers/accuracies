@@ -1,0 +1,5 @@
+0.9210152284264264 grouped all reduce
+0.8934010152284264 grouped 3 reduce
+0.9425947187141217 grouped 2 reduce
+0.7784530386740331 grouped 1 reduce
+0.9526726057906458 grouped 1 reduce 32 epochs
